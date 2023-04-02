@@ -10,6 +10,7 @@
 * workManger (for deleting cached data if there is strong internet connection and no low battery )
 * material design
 * navigation component
+* Bottom Navigation 
 * mvvm architecture
 * lifecycle component
 * retrofit (for network calls)
