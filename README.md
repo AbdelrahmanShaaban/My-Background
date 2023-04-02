@@ -1,3 +1,6 @@
+# movies Land Android
+
+* sample Wallpapers app (single activity app) that show photos from Api, download photo to phone, set this photo to your phone back ground and your phone lock screen .
 ## Requirements
  * android Lollipop or higher
 
