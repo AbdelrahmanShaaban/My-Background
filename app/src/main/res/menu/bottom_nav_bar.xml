@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragment_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/fragment_popular"
+        android:icon="@drawable/popular"
+        android:title="@string/popular" />
+    <item
+        android:id="@+id/fragment_search"
+        android:title=""/>
+    <item
+        android:id="@+id/fragment_random"
+        android:icon="@drawable/random"
+        android:title="@string/random" />
+
+    <item
+        android:id="@+id/fragment_category"
+        android:icon="@drawable/category_icon"
+        android:title="@string/category" />
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_home">
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.photo.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragment_home_to_downLoadFragment"
+            app:destination="@id/downLoadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_category"
+        android:name="com.example.photo.ui.fragments.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_fragment_category_to_specificCategoryFragment"
+            app:destination="@id/specificCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_popular"
+        android:name="com.example.photo.ui.fragments.PopularFragment"
+        android:label="fragment_popular"
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/action_fragment_popular_to_downLoadFragment"
+            app:destination="@id/downLoadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_random"
+        android:name="com.example.photo.ui.fragments.RandomFragment"
+        android:label="fragment_random"
+        tools:layout="@layout/fragment_random" >
+        <action
+            android:id="@+id/action_fragment_random_to_downLoadFragment"
+            app:destination="@id/downLoadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/specificCategoryFragment"
+        android:name="com.example.photo.ui.fragments.SpecificCategoryFragment"
+        android:label="fragment_specific_category"
+        tools:layout="@layout/fragment_specific_category" >
+        <action
+            android:id="@+id/action_specificCategoryFragment_to_downLoadFragment"
+            app:destination="@id/downLoadFragment" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/downLoadFragment"
+        android:name="com.example.photo.ui.fragments.DownLoadFragment"
+        android:label="fragment_down_load"
+        tools:layout="@layout/fragment_down_load" >
+        <argument
+            android:name="imageData"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.example.photo.ui.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_downLoadFragment"
+            app:destination="@id/downLoadFragment" />
+    </fragment>
+</navigation>
